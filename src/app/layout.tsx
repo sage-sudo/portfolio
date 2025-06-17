@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-//import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
 
-//const geistSans = Geist({
-//  variable: "--font-geist-sans",
-//  subsets: ["latin"],
-//});
-
-//const geistMono = Geist_Mono({
-//  variable: "--font-geist-mono",
-//  subsets: ["latin"],
-//});
 
 export const metadata: Metadata = {
   title: 'Trevah | Portfoli0',
@@ -27,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/">Home</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/contact">Contact</Link>
+            <Link href="/about">About</Link>
           </div>
         </nav>
         <main className="p-6">{children}</main>
@@ -34,17 +25,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
-/*
-export default function RootLayout({children,}: 
-Readonly<{children: React.ReactNode;}>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
-}
-  */
+

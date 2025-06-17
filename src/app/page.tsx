@@ -1,8 +1,4 @@
-import Hero from "@/../components/Hero";
 import { Span } from "next/dist/trace";
-import Link from "next/link";
-
-
 
 // app/page.tsx
 export default function Home() {
